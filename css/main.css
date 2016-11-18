@@ -1,1 +1,121 @@
-/* Inserte su codigo aqui */
+/*--------------------------------------------------------------------------- GENERAL ----------*/
+* {
+    outline: 1px solid rgba(255, 0, 0, 0.36);
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Domine, Serif;
+}
+.contenedor {
+    width: 75%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+/*---------------------------------------------------------------------------- HEADER ----------*/
+header {
+    background: #fdd703;
+    height: 650px;
+    padding-top: 30px;
+    position: relative;
+}
+header ul {
+    text-align: right;
+    margin: 0;
+}
+header li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+header .suma {
+    background: rgba(248, 153, 1, 0.9);
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    left: -82px;
+}
+header .suma:hover {
+    background: rgba(142, 98, 0, 0.65);
+}
+header .letra {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -125.4px;
+}
+header .letra h2 {
+    font-size: 45px;
+    margin: 0;
+}
+header .letra p {
+    font-size: 22px;
+    margin: 0;
+}
+/*------------------------------------------------------------------------- CONTENIDO ----------*/
+.contenido {
+    background: #e6e6e6;
+    padding: 70px 0 20px 0;
+}
+.contenido .box {
+    background: #fff;
+    padding: 15px;
+}
+.contenido .uno {
+    margin: 0 15px 15px 0;
+}
+.contenido .dos {
+    margin: 0 0 15px 15px;
+}
+.contenido .tres {
+    margin: 15px 15px 0 0;
+}
+.contenido .cuatro {
+    margin: 15px 0 0 15px;
+}
+.contenido .foto {
+    width: 300px;
+    height: 300px;
+    background: #bcbcbc;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.contenido .foto p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -17px 0 0 -53px;
+    font-size: 24px;
+}
+.contenido .col-md-6 {
+    padding: 0;
+}
+.contenido button {
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    background: rgba(248, 153, 1, 0.9);
+    border: none;
+    padding: 8px;
+}
+/*----------------------------------------------------------------------------- FOOTER ----------*/
+footer p {
+    background: #343434;
+    padding: 15px 0 25px 60px;
+    color: #fff;
+    margin: 0;
+}
+/*--------------------------------------------------------------------------- GENERAL ----------*/
