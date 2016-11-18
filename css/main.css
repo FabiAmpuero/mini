@@ -1,9 +1,10 @@
 /*--------------------------------------------------------------------------- GENERAL ----------*/
+/*
 * {
-    /*outline: 1px solid rgba(255, 0, 0, 0.36);*/
+    outline: 1px solid rgba(255, 0, 0, 0.36);
     margin: 0;
     padding: 0;
-}
+} */
 body {
     margin: 0;
     padding: 0;
@@ -27,12 +28,22 @@ header {
     height: 650px;
     padding-top: 30px;
     position: relative;
+    animation: pulse 30s infinite;
 }
-header ul {
+@keyframes pulse {
+    0% {background:#fdd703}
+    16% {background:#fd5a03}
+    33% {background:rgba(255, 0, 108, 0.95)}
+    49% {background:#ba03fd}
+    65% {background:#033dfd}
+    82% {background:#03e0fd}
+    100% {background:#fdd703}
+}
+header .contenedor ul {
     text-align: right;
     margin: 0;
 }
-header li {
+header .contenedor li {
     list-style: none;
     display: inline-block;
     padding-left: 20px;
@@ -85,6 +96,7 @@ header .letra p {
 .contenido .cuatro {
     margin: 15px 0 0 15px;
 }
+/*------------------ ANIMACION -----*/
 .contenido .foto {
     width: 300px;
     height: 300px;
@@ -92,7 +104,77 @@ header .letra p {
     margin: 0 auto;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
+.contenido .foto ul {
+    padding: 0;
+    display: flex;
+    width: 1200px;
+    animation: fabi 12s infinite alternate;
+}
+.contenido .foto li {
+    list-style: none;
+    width: 300px;
+}
+.contenido .foto img {
+    width: 300px;
+}
+@keyframes fabi {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    
+    25% { margin-left: -300px;}
+    45% { margin-left: -300px;}
+    
+    50% { margin-left: -600px;}
+    70% { margin-left: -600px;}
+    
+    75% { margin-left: -900px;}
+    100% { margin-left: -900px;}
+}
+/*------------------ ANIMACION -----*/
+.fot {
+    width: 300px;
+    height: 300px;
+    background: #bcbcbc;
+    margin: 0 auto;
+    text-align: center;
+}
+.fabi {
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 150px;
+    display: flex;
+    overflow: hidden;
+}
+.fabi ul {
+    padding-left: 10px;
+    animation: yape 7s infinite;
+}
+.fabi ul, p {
+    margin: 0;
+    list-style: none;
+}
+@keyframes yape {
+    0% { margin-top: 0; }
+    20% { margin-top: 0; }
+    
+    25% { margin-top: -40px; }
+    45% { margin-top: -40px; }
+    
+    50% { margin-top: -80px; }
+    75% { margin-top: -80px; }
+    
+    80% { margin-top: -40px; }
+    95% { margin-top: -40px; }
+    
+    100% { margin-top: 0px; }
+}
+/*------------------ ANIMACION -----*/
 .contenido .foto p {
     position: absolute;
     top: 50%;
